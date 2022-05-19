@@ -72,7 +72,7 @@ int main( void )
 	GLint MatrixIDs_first = glGetUniformLocation(programID_first, "MVP");
     GLint MatrixIDs_second = glGetUniformLocation(programID_second, "MVP");
 
-	glm::mat4 Projection = glm::perspective(40.f, 2.0f / 1.0f, 0.1f, 100.0f);
+	glm::mat4 Projection = glm::perspective(20.f, 4.0f / 3.0f, 0.1f, 100.0f);
 
 	// Model matrix : an identity matrix (model will be at the origin)
 	glm::mat4 Model = glm::mat4(1.0f);
