@@ -73,8 +73,6 @@ int main( void )
     GLint MatrixIDs_second = glGetUniformLocation(programID_second, "MVP");
 
 	glm::mat4 Projection = glm::perspective(40.f, 2.0f / 1.0f, 0.1f, 100.0f);
-	// Or, for an ortho camera :
-	//glm::mat4 Projection = glm::ortho(-10.0f,10.0f,-10.0f,10.0f,0.0f,100.0f); // In world coordinates
 
 	// Model matrix : an identity matrix (model will be at the origin)
 	glm::mat4 Model = glm::mat4(1.0f);
